@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>iterview</title>
+</head>
+<body>
+<script>
+    // 1.数组去重
+    var arr = [1,2,3,4,4,5,5,5]
+    var obj = {}, result = []
+    for(var i = 0; i < arr.length; i++) {
+        obj[arr[i]] = arr[i]
+    }
+    for (var a in obj){
+        result.push(Number(a))
+    }
+    console.log(result)
+</script>
+</body>
+</html>
